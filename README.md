@@ -1,5 +1,5 @@
 # Download and parse NMDC BioSample Attributes
-Script to download the associated attributes and data from BioSample entries of the National Microbiology Data Center (NMDC) of China and parse the information from multiple samples into a summary table.
+Python script to download the associated attributes and data from BioSample entries of the [National Microbiology Data Center (NMDC)](https://nmdc.cn/) of the PR of China and parse the information from multiple samples into a summary table.
 
 
 ## Usage
@@ -42,8 +42,18 @@ Then run the script:
 python download_nmdc_biosample_attributes.py -i input_biosamples.txt -o summary_table.tsv
 ```
 
+The script will collect and parse the following information and attributes:
+* BioSample id
+* Strain id (microbial data)
+* BioProject id
+* SRA Accession id
+* Genome id
+* Geographic Location
+* Year of collection
+* Sample submission contact
 
-This should give, for the previous example, an output table like the following:
+
+For the previous list of urls, the output table should contain the following:
 
 ```
 Sample	Strain	BioProject	SRA accession	Genome accession	Location	Species	Year	Submitter	Collection Date
