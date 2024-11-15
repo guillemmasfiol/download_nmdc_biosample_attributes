@@ -16,8 +16,9 @@ Necessary arguments:
 
 ```
 
-The script requires the previous installation of Google chrome in Unix:
+The script requires the previous installation of Google chrome and Selenium python package in Unix:
 ```
+pip install selenium
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo apt install ./google-chrome-stable_current_amd64.deb
 # then specify in the python script the path to the google chrome binary, i.e.: /usr/bin/google-chrome
