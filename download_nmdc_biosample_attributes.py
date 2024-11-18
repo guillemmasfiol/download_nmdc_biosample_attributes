@@ -57,7 +57,7 @@ def parse_text(text, sample_id):
         'Location': None,
         'Species': None,
         'Host': None,
-        'Collection Date': None,
+        'Year': None,
         'Submitter': None
     }
 
