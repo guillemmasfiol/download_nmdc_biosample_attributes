@@ -1,5 +1,5 @@
 # Download and parse NMDC BioSample Attributes
-Python script to download the associated attributes and data from BioSample entries of the [National Microbiology Data Center (NMDC)](https://nmdc.cn/) of the PR of China and parse the information from multiple samples into a summary table.
+Python script for website scraping to download the associated attributes and data from BioSample entries of the [National Microbiology Data Center (NMDC)](https://nmdc.cn/) of the PR of China and parse the information from multiple samples into a summary table.
 
 
 ## Usage
