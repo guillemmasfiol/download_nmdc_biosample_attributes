@@ -33,6 +33,11 @@ https://nmdc.cn/resource/genomics/sample/detail/NMDC20164907
 https://nmdc.cn/resource/genomics/sample/detail/NMDC20164900
 https://nmdc.cn/resource/genomics/sample/detail/NMDC20164927
 https://nmdc.cn/resource/genomics/sample/detail/NMDC20164928
+https://nmdc.cn/resource/genomics/sample/detail/NMDC20150470
+https://nmdc.cn/resource/genomics/sample/detail/NMDC20150471
+https://nmdc.cn/resource/genomics/sample/detail/NMDC20150472
+https://nmdc.cn/resource/genomics/sample/detail/NMDC20150473
+https://nmdc.cn/resource/genomics/sample/detail/NMDC20150474
 ...
 ```
 
@@ -50,6 +55,8 @@ The script will collect and parse the following information and attributes:
 * SRA Accession id
 * Genome id
 * Geographic Location
+* Organism species
+* Host of isolation of the microbe (when available)
 * Year of collection
 * Sample submission contact
 
@@ -57,10 +64,11 @@ The script will collect and parse the following information and attributes:
 For the previous list of urls, the output table should contain the following:
 
 ```
-Sample	Strain	BioProject	SRA accession	Genome accession	Location	Species	Year	Submitter	Collection Date
-NMDC20164904	02023	NMDC10018925	NMDC40056683	NMDC60154583	China:Qinghai Yersinia pestis	1959	Yarong Wu Email wuyarong525@126.com	
-NMDC20164907	02027	NMDC10018925	NMDC40056686	NMDC60154586	China:Qinghai Yersinia pestis	1960	Yarong Wu Email wuyarong525@126.com	
-NMDC20164900	02043	NMDC10018925	NMDC40056679	NMDC60154579	China:Qinghai Yersinia pestis	1967	Yarong Wu Email wuyarong525@126.com	
-NMDC20164927	08023	NMDC10018925	NMDC40056706	NMDC60154606	China:Qinghai Yersinia pestis	2008	Yarong Wu Email wuyarong525@126.com	
-NMDC20164928	100963	NMDC10018925	NMDC40056707	NMDC60154607	China:Qinghai Yersinia pestis	2010	Yarong Wu Email wuyarong525@126.com
+Sample	Strain	BioProject	SRA accession	Genome accession	Location	Species	Host	Year	Submitter
+NMDC20150469	4370	NMDC10018743	NMDC40052480	NMDC60198029	China:Inner Mongolia,Xilingol League	Yersinia pestis	2018-04-28 Meriones unguiculatus	ZuoXiuJuan Email zuoxiujuan1201@163.com	
+NMDC20150470	4371	NMDC10018743	NMDC40052481	NMDC60198030	China:Inner Mongolia,Xilingol League	Yersinia pestis	2018-04-28 Nosopsyllus laeviceps	ZuoXiuJuan Email zuoxiujuan1201@163.com	
+NMDC20150471	4372	NMDC10018743	NMDC40052482	NMDC60198031	China:Inner Mongolia,Xilingol League	Yersinia pestis	2018-04-28 Xenopsylla conformis	ZuoXiuJuan Email zuoxiujuan1201@163.com	
+NMDC20150472	4373	NMDC10018743	NMDC40052483	NMDC60198032	China:Inner Mongolia,Ulanqab	Yersinia pestis	2018-05-12 Meriones unguiculatus	ZuoXiuJuan Email zuoxiujuan1201@163.com	
+NMDC20150473	4374	NMDC10018743	NMDC40052484	NMDC60198033	China:Inner Mongolia,Ulanqab	Yersinia pestis	2018-05-15 Meriones unguiculatus	ZuoXiuJuan Email zuoxiujuan1201@163.com	
+NMDC20150474	4375	NMDC10018743	NMDC40052485	NMDC60198034	China:Inner Mongolia,Ulanqab	Yersinia pestis	2018-05-17 Nosopsyllus laeviceps	ZuoXiuJuan Email zuoxiujuan1201@163.com	
 ```
