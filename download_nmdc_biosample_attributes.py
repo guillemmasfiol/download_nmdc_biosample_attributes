@@ -56,6 +56,7 @@ def parse_text(text, sample_id):
         'Genome accession': None,
         'Location': None,
         'Species': None,
+        'Host': None,
         'Collection Date': None,
         'Submitter': None
     }
@@ -68,6 +69,7 @@ def parse_text(text, sample_id):
         'Genome accession': r'Genome Accession\s+(\S+)',
         'Location': r'Geographic Location\s+(.*?)(?=Organism)',
         'Species': r'Organism\s+([^\n]+)',
+        'Host': r'Host\s+([^\n]+)',
         'Year': r'Collection Date\s+([^\n]+)',
         'Submitter': r'Full Name\s+([^\n]+)'
     }
@@ -83,7 +85,7 @@ def parse_text(text, sample_id):
 def process_url_list(input_file, output_file):
     df = pd.DataFrame(columns=[
         'Sample', 'Strain', 'BioProject', 'SRA accession', 
-        'Genome accession', 'Location', 'Species', 'Year', 'Submitter'
+        'Genome accession', 'Location', 'Species', 'Host', 'Year', 'Submitter'
     ])
 
     with open(input_file, 'r') as file:
